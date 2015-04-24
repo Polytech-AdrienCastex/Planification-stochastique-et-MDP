@@ -1,0 +1,10 @@
+
+Question 1 :
+On peut traverser avec :
+* gamma = 0.9 ; bruit = 0.01
+
+Question 2 :
+*  +1/Risqué : gamma =  ; bruit =  ; autre = 
+*  +1/Sûr    : gamma = 0.2 ; bruit = 0.2 ; autre = 0
+* +10/Sûr    : gamma = 0.9 ; bruit = 0.2 ; autre = 0
+* +10/Risqué : gamma = 0.9 ; bruit = 0   ; autre = 0
