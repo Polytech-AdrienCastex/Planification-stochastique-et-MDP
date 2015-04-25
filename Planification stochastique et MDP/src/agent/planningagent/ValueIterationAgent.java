@@ -116,7 +116,7 @@ public class ValueIterationAgent extends PlanningValueAgent{
 	public List<Action> getPolitique(Etat _e)
         {
             List<Action> selectedActions = new ArrayList<>();
-            double value = 0.0;
+            double value = Double.MIN_VALUE;
             
             for(ActionGridworld a : getActions())
             {
@@ -128,7 +128,8 @@ public class ValueIterationAgent extends PlanningValueAgent{
                     value = tempValue;
                 }
                 
-                selectedActions.add(a);
+                if(value == tempValue)
+                    selectedActions.add(a);
             }
 
             return selectedActions;
@@ -137,7 +138,6 @@ public class ValueIterationAgent extends PlanningValueAgent{
         {
             try
             {
-                if(_e.)
                 return mdp.getEtatTransitionProba(_e, a)
                         .entrySet()
                         .stream()
